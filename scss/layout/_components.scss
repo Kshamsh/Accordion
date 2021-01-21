@@ -1,0 +1,40 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(192, 192, 192, 0.438);
+  padding-top: 100px;
+}
+.accordion {
+    background-color:$ACCORDION-BG-COLOR;
+    color: $ACCORDION-COLOR;
+    cursor: pointer;
+    padding: 18px;
+    width: 400px;
+    outline: none;
+    transition: 0.2s;
+    border: 1px solid silver;
+    text-align: center;
+
+  }
+  .accordion:hover {
+    background-color: $ACCORDION-BG-COLOR-HOVER;
+  }
+  .panel {
+    background-color: $PANEL-BG-COLOR;
+    overflow: hidden;
+    width: 380PX;
+    height: 0;
+    transition: all linear 0.2s;
+    &.active{
+      height: 196px;
+      transition:all 0.2s;
+    }
+  }
+  p{
+    padding: 8PX;
+    background-color: $P-BG-COLOR;
+    border: 1px solid rgba(192, 192, 192, 0.479);
+  }
+  
